@@ -1,0 +1,51 @@
+services:
+  lab1_1:
+    build:
+      context: ./lab1.1
+    image: lab1-c
+    working_dir: /workspace
+    volumes:
+      - ./lab1.1:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
+  lab1_2:
+    build:
+      context: ./lab1.2
+    image: lab1-2-c
+    working_dir: /workspace
+    volumes:
+      - ./lab1.2:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
+  lab3:
+    build:
+      context: ./lab3
+    image: lab3-c
+    working_dir: /workspace
+    volumes:
+      - ./lab3:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
+  lab4:
+    build:
+      context: ./lab4
+    image: lab4-c
+    working_dir: /workspace
+    volumes:
+      - ./lab4:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
+  lab5:
+    build:
+      context: ./lab5
+    image: lab5-c
+    working_dir: /workspace
+    volumes:
+      - ./lab5:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
