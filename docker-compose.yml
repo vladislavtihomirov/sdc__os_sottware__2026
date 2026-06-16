@@ -19,6 +19,16 @@ services:
     stdin_open: true
     tty: true
     command: bash
+  lab2:
+    build:
+      context: ./lab2
+    image: lab2-c
+    working_dir: /workspace
+    volumes:
+      - ./lab2:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
   lab3:
     build:
       context: ./lab3
