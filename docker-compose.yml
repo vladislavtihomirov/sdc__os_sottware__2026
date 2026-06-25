@@ -59,3 +59,13 @@ services:
     stdin_open: true
     tty: true
     command: bash
+  lab6:
+    build:
+      context: ./lab6
+    image: lab6-c
+    working_dir: /workspace
+    volumes:
+      - ./lab6:/workspace
+    stdin_open: true
+    tty: true
+    command: bash
